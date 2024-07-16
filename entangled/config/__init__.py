@@ -52,9 +52,9 @@ class Markers:
     begin_ignore: str = r"^\s*\~\~\~markdown\s*$"
     end_ignore: str = r"^\s*\~\~\~\s*$"
 
-
+# 
 markers = Markers(
-    r"^(?P<indent>\s*)```\s*(?P<language>[^{}]*)\s*{(?P<properties>[^{}]*)}\s*$", r"^(?P<indent>\s*)```\s*$"
+    r"^(?P<indent>\s*)```\s*\w*\s*{(?P<properties>[^{}]*)}\s*$", r"^(?P<indent>\s*)```\s*$"
 )
 
 
